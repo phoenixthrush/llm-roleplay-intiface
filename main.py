@@ -10,7 +10,8 @@ from ollama import chat
 # Config
 # -----------------------------
 
-MODEL = "artifish/llama3.2-uncensored"
+# MODEL = "artifish/llama3.2-uncensored"
+MODEL = "gemma4:e4b"
 SERVER_URL = "ws://127.0.0.1:12345"
 MODELFILE_PATH = Path("Modelfile")
 
