@@ -10,8 +10,8 @@ from ollama import chat
 # Config
 # -----------------------------
 
-# MODEL = "artifish/llama3.2-uncensored"
-MODEL = "gemma4:e4b"
+MODEL = "artifish/llama3.2-uncensored"
+# MODEL = "gemma4:e4b"
 SERVER_URL = "ws://127.0.0.1:12345"
 MODELFILE_PATH = Path("Modelfile")
 
@@ -33,7 +33,7 @@ Return exactly one JSON object with this shape:
   "reply": "short natural reply",
   "actions": [
     {
-      "type": "vibrate | rotate | stop",
+      "type": "vibrate | rotate | constrict | stop",
       "value": 0
     }
   ]
@@ -50,6 +50,14 @@ Rules:
 - do not put raw line breaks inside JSON strings
 - do not escape apostrophes
 - for normal conversation, actions should usually be an empty array
+- do not explain the JSON
+- do not add any text before or after the JSON
+- do not use terminal formatting or control characters
+
+Actions:
+- vibrate -> used for touching sensation (hand, thighs, kiss)
+- rotate -> literally straightaway handjob or fucking
+- constrict -> only used if getting a blowjob
 """.strip()
 
 
